@@ -39,8 +39,6 @@ const ProjectUsage: FC<Props> = ({ projectRef }) => {
 
   const planName = subscriptionTier ? planNames[subscriptionTier] || 'current' : 'current'
 
-  console.log({ subscriptionTier })
-
   useEffect(() => {
     if (error) {
       ui.setNotification({
